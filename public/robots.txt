@@ -1,0 +1,5 @@
+# 臺灣耘達股份有限公司
+User-agent: *
+Allow: /
+
+Sitemap: https://twvita.com.tw/sitemap.xml

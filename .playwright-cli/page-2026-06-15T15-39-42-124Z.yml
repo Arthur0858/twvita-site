@@ -1,0 +1,113 @@
+- generic [active] [ref=e1]:
+  - link "跳到主要內容" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "臺灣耘達首頁" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: 耘
+        - generic [ref=e7]:
+          - strong [ref=e8]: 臺灣耘達股份有限公司
+          - generic [ref=e9]: 防水工程與防水膜系統
+      - navigation "主選單" [ref=e10]:
+        - link "首頁" [ref=e11] [cursor=pointer]:
+          - /url: /
+        - link "公司簡介" [ref=e12] [cursor=pointer]:
+          - /url: /about.html
+        - link "屋頂防水" [ref=e13] [cursor=pointer]:
+          - /url: /roof-waterproofing.html
+        - link "水塔水池" [ref=e14] [cursor=pointer]:
+          - /url: /tank-pool-waterproofing.html
+        - link "工程實績" [ref=e15] [cursor=pointer]:
+          - /url: /projects.html
+        - link "防水膜規格" [ref=e16] [cursor=pointer]:
+          - /url: /membranes.html
+        - link "聯絡我們" [ref=e17] [cursor=pointer]:
+          - /url: /contact.html
+  - main [ref=e18]:
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - paragraph [ref=e22]: 30年以上防水工程經驗
+        - heading "讓建築的防水層，成為長期可靠的工程系統。" [level=1] [ref=e23]
+        - paragraph [ref=e24]: 臺灣耘達以 PVC、TPO、HDPE 等防水膜系統，協助屋頂、水塔、水池、隧道與公共工程建立穩定、可維修、耐候的防水解決方案。
+        - generic [ref=e25]:
+          - link "查看工程實績" [ref=e26] [cursor=pointer]:
+            - /url: /projects.html
+          - link "聯絡評估" [ref=e27] [cursor=pointer]:
+            - /url: /contact.html
+      - img "屋頂防水膜施工現場" [ref=e29]
+    - region "工程重點" [ref=e30]:
+      - generic [ref=e31]:
+        - strong [ref=e32]: 1990至今
+        - text: 台灣與海外工程經驗
+      - generic [ref=e33]:
+        - strong [ref=e34]: PVC/TPO
+        - text: 外曝式單層屋面系統
+      - generic [ref=e35]:
+        - strong [ref=e36]: 覆蓋式修繕
+        - text: 降低敲除與重作成本
+      - generic [ref=e37]:
+        - strong [ref=e38]: 可局部維修
+        - text: 降低後期維護成本
+    - generic [ref=e40]:
+      - generic [ref=e41]:
+        - paragraph [ref=e42]: 核心服務
+        - heading "從屋頂漏水到蓄水池修繕，以工程條件選擇合適防水系統。" [level=2] [ref=e43]
+        - paragraph [ref=e44]: 我們重視現場條件、材料規格、節點收邊與後續維修，避免只用短期塗布方式處理長期結構問題。
+      - generic [ref=e45]:
+        - article [ref=e46]:
+          - img "屋頂防水施工細部" [ref=e47]
+          - generic [ref=e48]:
+            - heading "屋頂防水施工修繕" [level=3] [ref=e49]
+            - paragraph [ref=e50]: 適用水泥屋頂、鐵皮屋頂、工業廠房、物流倉儲與公共建築屋面。
+            - paragraph [ref=e51]:
+              - link "了解屋頂防水" [ref=e52] [cursor=pointer]:
+                - /url: /roof-waterproofing.html
+        - article [ref=e53]:
+          - img "水塔與蓄水池防水施工" [ref=e54]
+          - generic [ref=e55]:
+            - heading "水塔、水池與蓄水修繕" [level=3] [ref=e56]
+            - paragraph [ref=e57]: 以防水膜覆蓋與焊接工法處理池體老化、滲漏與停水時間壓力。
+            - paragraph [ref=e58]:
+              - link "了解蓄水修繕" [ref=e59] [cursor=pointer]:
+                - /url: /tank-pool-waterproofing.html
+        - article [ref=e60]:
+          - img "防水膜材料" [ref=e61]
+          - generic [ref=e62]:
+            - heading "防水膜材料與規劃" [level=3] [ref=e63]
+            - paragraph [ref=e64]: 提供 HDPE、PVC、EVA、TPO、EPDM 等防水膜材料與施工規劃。
+            - paragraph [ref=e65]:
+              - link "查看材料規格" [ref=e66] [cursor=pointer]:
+                - /url: /membranes.html
+    - generic [ref=e68]:
+      - generic [ref=e69]:
+        - paragraph [ref=e70]: 工程信任
+        - heading "從交通、捷運、隧道到民生建築，累積跨場域防水經驗。" [level=2] [ref=e71]
+        - paragraph [ref=e72]: 臺灣耘達率先引進 NATM 工法中的防水系統，並曾參與佳山計劃等重大工程應用。多年來服務範圍涵蓋屋頂、地下結構、蓄水池、衛生掩埋場、隧道與捷運工程。
+        - list [ref=e73]:
+          - listitem [ref=e74]: 重視防水層連續性、焊接品質與細部節點處理。
+          - listitem [ref=e75]: 依現場使用情境選擇材料，不以單一工法套用所有問題。
+          - listitem [ref=e76]: 以可維修、可檢查、可延長壽命作為修繕策略。
+      - img "防水工程現場照片" [ref=e77]
+    - generic [ref=e79]:
+      - generic [ref=e80]:
+        - heading "需要評估漏水、屋頂或水池防水問題？" [level=2] [ref=e81]
+        - paragraph [ref=e82]: 提供現場條件討論、材料建議與施工修繕規劃。
+      - generic [ref=e83]:
+        - link "撥打 (02)2812-0021" [ref=e84] [cursor=pointer]:
+          - /url: tel:+886228120021
+        - link "LINE 線上諮詢" [ref=e85] [cursor=pointer]:
+          - /url: https://lin.ee/Wug5q7i
+  - contentinfo [ref=e86]:
+    - generic [ref=e87]:
+      - generic [ref=e88]:
+        - strong [ref=e89]: 臺灣耘達股份有限公司
+        - generic [ref=e90]: 11172 台北市士林區永平街9巷16號
+        - generic [ref=e91]: TEL：(02)2812-0021 / E-mail：vitawaterproof@gmail.com
+      - generic [ref=e92]:
+        - link "聯絡我們" [ref=e93] [cursor=pointer]:
+          - /url: /contact.html
+        - link "工程實績" [ref=e94] [cursor=pointer]:
+          - /url: /projects.html
+        - link "防水膜規格" [ref=e95] [cursor=pointer]:
+          - /url: /membranes.html

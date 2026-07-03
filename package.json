@@ -1,0 +1,30 @@
+{
+  "name": "twvita-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "a11y:live": "node scripts/a11y-live.mjs",
+    "assets:live": "node scripts/assets-live.mjs",
+    "audit:live": "node scripts/audit-live.mjs",
+    "cache:live": "node scripts/cache-hygiene-live.mjs",
+    "cache:purge:obsolete": "node scripts/purge-obsolete-cache.mjs",
+    "console:live": "node scripts/console-live.mjs",
+    "copy:check": "node scripts/copy-quality.mjs",
+    "discovery:live": "node scripts/discovery-live.mjs",
+    "dom:live": "node scripts/dom-live.mjs",
+    "drift:live": "node scripts/drift-live.mjs",
+    "headers:live": "node scripts/headers-live.mjs",
+    "interaction:live": "node scripts/interaction-live.mjs",
+    "links:live": "node scripts/link-live.mjs",
+    "layout:live": "node scripts/layout-live.mjs",
+    "metadata:live": "node scripts/metadata-live.mjs",
+    "perf:live": "node scripts/perf-live.mjs",
+    "print:live": "node scripts/print-live.mjs",
+    "structured:live": "node scripts/structured-live.mjs",
+    "validate": "node scripts/validate-site.mjs",
+    "smoke:live": "node scripts/smoke-live.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.61.0"
+  }
+}

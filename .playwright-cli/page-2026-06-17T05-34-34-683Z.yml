@@ -1,0 +1,157 @@
+- generic [active] [ref=e1]:
+  - link "跳到主要內容" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "臺灣耘達首頁" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e7]
+        - generic [ref=e8]:
+          - strong [ref=e9]: 臺灣耘達股份有限公司
+          - generic [ref=e10]: 專業防水工程公司
+      - generic [ref=e11]: 目前服務範圍：雙北地區
+      - navigation "主選單" [ref=e12]:
+        - link "首頁" [ref=e13] [cursor=pointer]:
+          - /url: /
+        - link "公司簡介" [ref=e14] [cursor=pointer]:
+          - /url: /about
+        - link "屋頂防水" [ref=e15] [cursor=pointer]:
+          - /url: /roof-waterproofing
+        - link "水塔水池" [ref=e16] [cursor=pointer]:
+          - /url: /tank-pool-waterproofing
+        - link "工程實績" [ref=e17] [cursor=pointer]:
+          - /url: /projects
+        - link "聯絡我們" [ref=e18] [cursor=pointer]:
+          - /url: /contact
+  - main [ref=e19]:
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - paragraph [ref=e23]: 臺灣耘達股份有限公司
+        - heading "雙北地區專業防水公司" [level=1] [ref=e24]
+        - paragraph [ref=e25]: 臺灣耘達處理屋頂、水塔水池、設備基座與管線周邊滲漏。每個案場先確認可能水路、基層狀態、排水條件與施工限制，再依現場條件提出可維護、可說明的防水做法。
+        - generic "工程評估重點" [ref=e26]:
+          - generic [ref=e27]:
+            - strong [ref=e28]: 大型案場經驗
+            - generic [ref=e29]: 累積材料、接縫與現場協調判斷
+          - generic [ref=e30]:
+            - strong [ref=e31]: 雙北在地服務
+            - generic [ref=e32]: 承接住家、社區、店面與小型廠辦
+          - generic [ref=e33]:
+            - strong [ref=e34]: 施工前確認
+            - generic [ref=e35]: 先說明範圍、工期、限制與維護方式
+        - generic [ref=e36]:
+          - link "查看工程實績" [ref=e37] [cursor=pointer]:
+            - /url: /projects
+          - link "聯絡評估" [ref=e38] [cursor=pointer]:
+            - /url: /contact
+      - generic [ref=e39]:
+        - img "頂樓防水處理與水塔周邊屋面" [ref=e41]
+        - generic [ref=e42]:
+          - strong [ref=e43]: 現場施工與細部收邊
+          - generic [ref=e44]: 排水、牆角、設備與實際使用限制一起看
+    - region "工程重點" [ref=e45]:
+      - generic [ref=e46]:
+        - strong [ref=e47]: 公共工程背景
+        - text: 交通、地下、蓄水與環保設施經驗
+      - generic [ref=e48]:
+        - strong [ref=e49]: 現行服務方向
+        - text: 頂樓、水箱、後場與小型廠辦修繕
+      - generic [ref=e50]:
+        - strong [ref=e51]: 評估重點
+        - text: 水痕、排水、裂縫與穿孔節點
+      - generic [ref=e52]:
+        - strong [ref=e53]: 安排方式
+        - text: 依預算、停用時間與現場條件規劃
+    - generic [ref=e55]:
+      - generic [ref=e56]:
+        - paragraph [ref=e57]: 常見需求
+        - heading "先看現場條件，再安排合適工法。" [level=2] [ref=e58]
+        - paragraph [ref=e59]: 滲水處理不能只看表面裂縫。屋面坡度、排水口、女兒牆、既有防水層與使用中的設備，都會影響修繕範圍與責任邊界。
+      - generic [ref=e60]:
+        - article [ref=e61]:
+          - img "設備基座與管線周邊防水收邊" [ref=e63]
+          - generic [ref=e64]:
+            - heading "屋頂與設備周邊防水" [level=3] [ref=e65]
+            - paragraph [ref=e66]: 適用公寓頂樓、鐵皮屋、店面後場與小型廠辦，重點確認排水坡度、女兒牆與設備基座收邊。
+            - paragraph [ref=e67]:
+              - link "了解屋頂防水" [ref=e68] [cursor=pointer]:
+                - /url: /roof-waterproofing
+        - article [ref=e69]:
+          - img "水箱或池體內襯防水處理" [ref=e71]
+          - generic [ref=e72]:
+            - heading "水塔、水箱與池體處理" [level=3] [ref=e73]
+            - paragraph [ref=e74]: 針對裂縫、接縫與內襯老化，評估材料相容性、停用時間與後續檢修條件。
+            - paragraph [ref=e75]:
+              - link "了解蓄水修繕" [ref=e76] [cursor=pointer]:
+                - /url: /tank-pool-waterproofing
+        - article [ref=e77]:
+          - img "防水細部收邊施工" [ref=e79]
+          - generic [ref=e80]:
+            - heading "工程式細部處理" [level=3] [ref=e81]
+            - paragraph [ref=e82]: 接縫、轉角、管線穿孔與設備基座需完整收邊，避免滲漏由薄弱節點再次擴散。
+            - paragraph [ref=e83]:
+              - link "查看工程實績" [ref=e84] [cursor=pointer]:
+                - /url: /projects
+    - generic [ref=e87]:
+      - generic [ref=e88]:
+        - paragraph [ref=e89]: 施工原則
+        - heading "節點處理清楚，後續維護才有依據。" [level=2] [ref=e90]
+        - paragraph [ref=e91]: 水可能沿裂縫、接縫、設備基座或排水不良處移動。規劃時會把可保留區域、需補強位置與日後檢查方式一起說明，避免只做表面遮蓋。
+        - img "屋面排水與防水層表面" [ref=e93]
+      - generic [ref=e94]:
+        - generic [ref=e95]:
+          - strong [ref=e96]: 找出可能水路
+          - generic [ref=e97]: 水痕位置不一定就是漏水點，需要連同排水與接縫一起看。
+        - generic [ref=e98]:
+          - strong [ref=e99]: 降低破壞範圍
+          - generic [ref=e100]: 可保留的基層盡量保留，不適合覆蓋的位置會先說明。
+        - generic [ref=e101]:
+          - strong [ref=e102]: 節點清楚交代
+          - generic [ref=e103]: 女兒牆、排水口、管線與設備基座需確認收邊方式。
+        - generic [ref=e104]:
+          - strong [ref=e105]: 維護方式明確
+          - generic [ref=e106]: 完工後仍需能檢查、清潔與局部維修。
+    - generic [ref=e108]:
+      - generic [ref=e109]:
+        - paragraph [ref=e110]: 專業判斷
+        - heading "小型民間案件，也以工程標準判斷。" [level=2] [ref=e111]
+        - paragraph [ref=e112]: 住家頂樓、店面後場或小型廠辦，通常在意施工範圍、預算與營運影響。臺灣耘達會依現況提出可執行的修繕方式，並保留後續檢查維護的彈性。
+        - list [ref=e113]:
+          - listitem [ref=e114]: 不以固定套餐套用，先確認漏水位置、使用限制與可施工條件。
+          - listitem [ref=e115]: 同步檢查排水、接縫、設備穿孔與收邊細節。
+          - listitem [ref=e116]: 兼顧預算、施工時間與日後維修便利性。
+      - img "池體內襯防水施工後狀態" [ref=e118]
+    - generic [ref=e120]:
+      - generic [ref=e121]:
+        - heading "把現場條件說清楚，評估會更快。" [level=2] [ref=e122]
+        - paragraph [ref=e123]: 來電或 Email 說明位置、發生時機、曾修補方式與可施工時段，後續再判斷是否需要到場查看。
+      - generic [ref=e124]:
+        - link "臺灣耘達電話 (02)2812-0021" [ref=e125] [cursor=pointer]:
+          - /url: tel:+886228120021
+          - text: (02)2812-0021
+        - link "Email 洽詢臺灣耘達" [ref=e126] [cursor=pointer]:
+          - /url: mailto:vitawaterproof@gmail.com?subject=%E8%87%BA%E7%81%A3%E8%80%98%E9%81%94%E9%98%B2%E6%B0%B4%E5%B7%A5%E7%A8%8B%E8%A9%95%E4%BC%B0&body=%E5%BB%BA%E7%AF%89%E9%A1%9E%E5%9E%8B%EF%BC%9A%0A%E5%95%8F%E9%A1%8C%E4%BD%8D%E7%BD%AE%EF%BC%9A%0A%E7%9B%AE%E5%89%8D%E7%8B%80%E6%B3%81%EF%BC%9A%0A%E7%85%A7%E7%89%87%E6%88%96%E5%B0%BA%E5%AF%B8%EF%BC%9A%0A%E4%BD%BF%E7%94%A8%E9%99%90%E5%88%B6%EF%BC%9A%0A%E5%8F%AF%E8%81%AF%E7%B5%A1%E6%99%82%E9%96%93%EF%BC%9A
+          - text: Email 洽詢
+  - generic "快速聯絡" [ref=e127]:
+    - link "臺灣耘達電話 (02)2812-0021" [ref=e128] [cursor=pointer]:
+      - /url: tel:+886228120021
+      - text: (02)2812-0021
+    - link "Email 洽詢臺灣耘達" [ref=e129] [cursor=pointer]:
+      - /url: mailto:vitawaterproof@gmail.com?subject=%E8%87%BA%E7%81%A3%E8%80%98%E9%81%94%E9%98%B2%E6%B0%B4%E5%B7%A5%E7%A8%8B%E8%A9%95%E4%BC%B0&body=%E5%BB%BA%E7%AF%89%E9%A1%9E%E5%9E%8B%EF%BC%9A%0A%E5%95%8F%E9%A1%8C%E4%BD%8D%E7%BD%AE%EF%BC%9A%0A%E7%9B%AE%E5%89%8D%E7%8B%80%E6%B3%81%EF%BC%9A%0A%E7%85%A7%E7%89%87%E6%88%96%E5%B0%BA%E5%AF%B8%EF%BC%9A%0A%E4%BD%BF%E7%94%A8%E9%99%90%E5%88%B6%EF%BC%9A%0A%E5%8F%AF%E8%81%AF%E7%B5%A1%E6%99%82%E9%96%93%EF%BC%9A
+      - text: Email 洽詢
+  - contentinfo [ref=e130]:
+    - generic [ref=e131]:
+      - generic [ref=e132]:
+        - strong [ref=e133]: 臺灣耘達股份有限公司
+        - generic [ref=e134]: 11172 台北市士林區永平街9巷16號
+        - generic [ref=e135]:
+          - text: TEL：
+          - link "臺灣耘達電話 (02)2812-0021" [ref=e136] [cursor=pointer]:
+            - /url: tel:+886228120021
+            - text: (02)2812-0021
+          - text: / E-mail：vitawaterproof@gmail.com
+      - generic [ref=e137]:
+        - link "聯絡我們" [ref=e138] [cursor=pointer]:
+          - /url: /contact
+        - link "工程實績" [ref=e139] [cursor=pointer]:
+          - /url: /projects

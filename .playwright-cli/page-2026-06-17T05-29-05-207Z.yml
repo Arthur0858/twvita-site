@@ -1,0 +1,94 @@
+- generic [active] [ref=e1]:
+  - link "跳到主要內容" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "臺灣耘達首頁" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e7]
+        - generic [ref=e8]:
+          - strong [ref=e9]: 臺灣耘達股份有限公司
+          - generic [ref=e10]: 專業防水工程公司
+      - generic [ref=e11]: 目前服務範圍：雙北地區
+      - navigation "主選單" [ref=e12]:
+        - link "首頁" [ref=e13] [cursor=pointer]:
+          - /url: /
+        - link "公司簡介" [ref=e14] [cursor=pointer]:
+          - /url: /about
+        - link "屋頂防水" [ref=e15] [cursor=pointer]:
+          - /url: /roof-waterproofing
+        - link "水塔水池" [ref=e16] [cursor=pointer]:
+          - /url: /tank-pool-waterproofing
+        - link "工程實績" [ref=e17] [cursor=pointer]:
+          - /url: /projects
+        - link "聯絡我們" [ref=e18] [cursor=pointer]:
+          - /url: /contact
+  - main [ref=e19]:
+    - generic [ref=e21]:
+      - paragraph [ref=e22]: 聯絡我們
+      - heading "防水工程洽詢與現場資料整理" [level=1] [ref=e23]
+      - paragraph [ref=e24]: 目前服務範圍為雙北地區。詢問時先說明建築類型、位置、現況與可施工限制；若方便，再附照片與尺寸，便於初步判斷。
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - heading "公司資訊" [level=2] [ref=e28]
+        - list [ref=e29]:
+          - listitem [ref=e30]:
+            - strong [ref=e31]: 公司名稱
+            - text: 臺灣耘達股份有限公司
+          - listitem [ref=e32]:
+            - strong [ref=e33]: 地址
+            - text: 11172 台北市士林區永平街9巷16號
+          - listitem [ref=e34]:
+            - strong [ref=e35]: 電話
+            - link "臺灣耘達電話 (02)2812-0021" [ref=e36] [cursor=pointer]:
+              - /url: tel:+886228120021
+              - text: (02)2812-0021
+          - listitem [ref=e37]:
+            - strong [ref=e38]: Email
+            - link "寄信至臺灣耘達 Email" [ref=e39] [cursor=pointer]:
+              - /url: mailto:vitawaterproof@gmail.com?subject=%E8%87%BA%E7%81%A3%E8%80%98%E9%81%94%E9%98%B2%E6%B0%B4%E5%B7%A5%E7%A8%8B%E8%A9%95%E4%BC%B0&body=%E5%BB%BA%E7%AF%89%E9%A1%9E%E5%9E%8B%EF%BC%9A%0A%E5%95%8F%E9%A1%8C%E4%BD%8D%E7%BD%AE%EF%BC%9A%0A%E7%9B%AE%E5%89%8D%E7%8B%80%E6%B3%81%EF%BC%9A%0A%E7%85%A7%E7%89%87%E6%88%96%E5%B0%BA%E5%AF%B8%EF%BC%9A%0A%E4%BD%BF%E7%94%A8%E9%99%90%E5%88%B6%EF%BC%9A%0A%E5%8F%AF%E8%81%AF%E7%B5%A1%E6%99%82%E9%96%93%EF%BC%9A
+              - text: vitawaterproof@gmail.com
+          - listitem [ref=e40]:
+            - strong [ref=e41]: 服務範圍
+            - text: 雙北地區
+        - generic [ref=e42]:
+          - link "Email 洽詢臺灣耘達" [ref=e43] [cursor=pointer]:
+            - /url: mailto:vitawaterproof@gmail.com?subject=%E8%87%BA%E7%81%A3%E8%80%98%E9%81%94%E9%98%B2%E6%B0%B4%E5%B7%A5%E7%A8%8B%E8%A9%95%E4%BC%B0&body=%E5%BB%BA%E7%AF%89%E9%A1%9E%E5%9E%8B%EF%BC%9A%0A%E5%95%8F%E9%A1%8C%E4%BD%8D%E7%BD%AE%EF%BC%9A%0A%E7%9B%AE%E5%89%8D%E7%8B%80%E6%B3%81%EF%BC%9A%0A%E7%85%A7%E7%89%87%E6%88%96%E5%B0%BA%E5%AF%B8%EF%BC%9A%0A%E4%BD%BF%E7%94%A8%E9%99%90%E5%88%B6%EF%BC%9A%0A%E5%8F%AF%E8%81%AF%E7%B5%A1%E6%99%82%E9%96%93%EF%BC%9A
+            - text: Email 洽詢
+          - link "臺灣耘達電話 (02)2812-0021" [ref=e44] [cursor=pointer]:
+            - /url: tel:+886228120021
+            - text: (02)2812-0021
+      - generic [ref=e45]:
+        - heading "讓我們更快判斷的資訊" [level=2] [ref=e46]
+        - list [ref=e47]:
+          - listitem [ref=e48]: 案場類型：公寓、社區、透天、店面、廠辦、水池或其他場域。
+          - listitem [ref=e49]: 問題位置：屋頂、女兒牆、排水口、設備穿孔、水塔、水箱或池體。
+          - listitem [ref=e50]: 現況描述：何時開始滲漏、雨後或用水後是否加重、是否曾補修。
+          - listitem [ref=e51]: 照片與尺寸：全景、細部、長寬高或大約面積，有助於先抓範圍。
+          - listitem [ref=e52]: 使用限制：可施工時段、是否能清空、是否影響住戶或營業。
+        - generic [ref=e53]:
+          - strong [ref=e54]: Email 可補充現場資料
+          - generic [ref=e55]: 點選 Email 洽詢會先帶入資料欄位；全景、滲漏位置、排水口或設備周邊照片，可協助縮短來回確認時間。
+  - generic "快速聯絡" [ref=e56]:
+    - link "臺灣耘達電話 (02)2812-0021" [ref=e57] [cursor=pointer]:
+      - /url: tel:+886228120021
+      - text: (02)2812-0021
+    - link "Email 洽詢臺灣耘達" [ref=e58] [cursor=pointer]:
+      - /url: mailto:vitawaterproof@gmail.com?subject=%E8%87%BA%E7%81%A3%E8%80%98%E9%81%94%E9%98%B2%E6%B0%B4%E5%B7%A5%E7%A8%8B%E8%A9%95%E4%BC%B0&body=%E5%BB%BA%E7%AF%89%E9%A1%9E%E5%9E%8B%EF%BC%9A%0A%E5%95%8F%E9%A1%8C%E4%BD%8D%E7%BD%AE%EF%BC%9A%0A%E7%9B%AE%E5%89%8D%E7%8B%80%E6%B3%81%EF%BC%9A%0A%E7%85%A7%E7%89%87%E6%88%96%E5%B0%BA%E5%AF%B8%EF%BC%9A%0A%E4%BD%BF%E7%94%A8%E9%99%90%E5%88%B6%EF%BC%9A%0A%E5%8F%AF%E8%81%AF%E7%B5%A1%E6%99%82%E9%96%93%EF%BC%9A
+      - text: Email 洽詢
+  - contentinfo [ref=e59]:
+    - generic [ref=e60]:
+      - generic [ref=e61]:
+        - strong [ref=e62]: 臺灣耘達股份有限公司
+        - generic [ref=e63]: 11172 台北市士林區永平街9巷16號
+        - generic [ref=e64]:
+          - text: TEL：
+          - link "臺灣耘達電話 (02)2812-0021" [ref=e65] [cursor=pointer]:
+            - /url: tel:+886228120021
+            - text: (02)2812-0021
+          - text: / E-mail：vitawaterproof@gmail.com
+      - generic [ref=e66]:
+        - link "聯絡我們" [ref=e67] [cursor=pointer]:
+          - /url: /contact
+        - link "工程實績" [ref=e68] [cursor=pointer]:
+          - /url: /projects

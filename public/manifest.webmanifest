@@ -1,0 +1,72 @@
+{
+  "name": "臺灣耘達股份有限公司",
+  "short_name": "臺灣耘達",
+  "description": "臺灣耘達服務雙北地區屋頂、水塔水池與設備周邊專業防水工程，洽詢時請說明現況、位置與可施工限制。",
+  "id": "https://twvita.com.tw/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "minimal-ui",
+  "background_color": "#f7f9f7",
+  "theme_color": "#123c30",
+  "lang": "zh-Hant-TW",
+  "dir": "ltr",
+  "categories": [
+    "business",
+    "utilities"
+  ],
+  "shortcuts": [
+    {
+      "name": "聯絡我們",
+      "short_name": "聯絡",
+      "description": "洽詢雙北地區防水工程評估。",
+      "url": "/contact",
+      "icons": [
+        {
+          "src": "/assets/images/vita-icon.png?v=20260617-audit96",
+          "sizes": "512x512",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "屋頂防水",
+      "short_name": "屋頂",
+      "description": "屋頂、女兒牆與設備周邊防水工程。",
+      "url": "/roof-waterproofing",
+      "icons": [
+        {
+          "src": "/assets/images/vita-icon.png?v=20260617-audit96",
+          "sizes": "512x512",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "水塔水池",
+      "short_name": "水池",
+      "description": "水塔、水箱與池體防水工程。",
+      "url": "/tank-pool-waterproofing",
+      "icons": [
+        {
+          "src": "/assets/images/vita-icon.png?v=20260617-audit96",
+          "sizes": "512x512",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "icons": [
+    {
+      "src": "/assets/images/vita-icon.png?v=20260617-audit96",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png?v=20260617-audit96",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
