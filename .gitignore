@@ -3,3 +3,9 @@ node_modules/
 output/
 __pycache__/
 *.pyc
+.env
+.env.*
+!.env.example
+.local-secrets/
+.wrangler/
+.playwright-cli/

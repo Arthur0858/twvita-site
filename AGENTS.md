@@ -11,9 +11,12 @@ Static marketing site for twvita.com.tw. Deployed to Cloudflare Pages (preview +
 ## Conventions
 - Content language: Traditional Chinese (繁體中文); code/comments in English.
 - Secrets (CF Pages token) live in `.local-secrets/cf-pages-token.env` — never commit.
-- Deploy target: Cloudflare Pages. No GitHub remote auto-trigger; CI in
-  `.github/workflows/deploy.yml` needs a remote + secrets to fire.
+- Deploy target: Cloudflare Pages. Pull requests run validation only.
+- Production deploys require a manual `workflow_dispatch` of
+  `.github/workflows/deploy.yml`; configure approval protection on the GitHub
+  `production` environment before relying on environment approval as a gate.
 
 ## Do NOT
 - Commit `.local-secrets/`, `node_modules/`, or built output.
 - Deploy to prod without explicit user confirmation.
+- Add a `push` trigger to the production deploy workflow.
