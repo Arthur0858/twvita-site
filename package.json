@@ -25,6 +25,7 @@
     "smoke:live": "node scripts/smoke-live.mjs"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.12.1",
     "playwright": "^1.61.0"
   }
 }

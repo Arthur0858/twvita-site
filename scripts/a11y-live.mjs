@@ -1,4 +1,5 @@
-import { spawnSync } from "node:child_process";
+import AxeBuilder from "@axe-core/playwright";
+import { chromium } from "playwright";
 
 const baseUrl = process.env.A11Y_BASE_URL ?? "https://twvita.com.tw";
 const paths = [
@@ -9,31 +10,58 @@ const paths = [
   "/projects",
   "/contact",
 ];
-const urls = paths.map((path) => `${baseUrl}${path}`);
 const viewports = [
   { name: "mobile", width: 390, height: 844 },
   { name: "desktop", width: 1440, height: 1000 },
 ];
 
-for (const viewport of viewports) {
-  console.log(`\n== axe ${viewport.name} ${viewport.width}x${viewport.height} ==`);
-  const result = spawnSync("npx", [
-    "--yes",
-    "@axe-core/cli",
-    ...urls,
-    "--exit",
-    `--chrome-options=--window-size=${viewport.width},${viewport.height}`,
-  ], {
-    stdio: "inherit",
-  });
-
-  if (result.error) {
-    console.error(`Unable to run axe-core: ${result.error.message}`);
-    process.exit(1);
+const browser = await chromium.launch({ headless: true });
+const failures = [];
+try {
+  for (const viewport of viewports) {
+    console.log(`\n== axe ${viewport.name} ${viewport.width}x${viewport.height} ==`);
+    const context = await browser.newContext({
+      viewport: { width: viewport.width, height: viewport.height },
+    });
+    try {
+      for (const path of paths) {
+        const page = await context.newPage();
+        try {
+          const url = `${baseUrl}${path}`;
+          const response = await page.goto(url, { waitUntil: "domcontentloaded" });
+          if (!response?.ok()) {
+            failures.push({ viewport: viewport.name, path, error: `HTTP ${response?.status() ?? "no response"}` });
+            continue;
+          }
+          const results = await new AxeBuilder({ page }).analyze();
+          if (results.violations.length > 0) {
+            failures.push({
+              viewport: viewport.name,
+              path,
+              violations: results.violations.map((violation) => ({
+                id: violation.id,
+                impact: violation.impact,
+                nodes: violation.nodes.length,
+              })),
+            });
+          }
+        } finally {
+          await page.close();
+        }
+      }
+    } finally {
+      await context.close();
+    }
   }
-  if ((result.status ?? 1) !== 0) {
-    process.exit(result.status ?? 1);
-  }
+} finally {
+  await browser.close();
 }
 
-console.log(`Axe accessibility check passed for ${baseUrl}: ${paths.length} pages across ${viewports.length} viewports.`);
+if (failures.length > 0) {
+  console.error(JSON.stringify({ ok: false, failures }, null, 2));
+  process.exit(1);
+}
+
+console.log(
+  `Axe accessibility check passed for ${baseUrl}: ${paths.length} pages across ${viewports.length} viewports.`,
+);

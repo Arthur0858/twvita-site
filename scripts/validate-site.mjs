@@ -1657,7 +1657,8 @@ const a11yLive = read("scripts/a11y-live.mjs");
 for (const requiredA11yText of [
   'name: "mobile", width: 390, height: 844',
   'name: "desktop", width: 1440, height: 1000',
-  "--chrome-options=--window-size=",
+  "viewport: { width: viewport.width, height: viewport.height }",
+  "new AxeBuilder({ page }).analyze()",
   "Axe accessibility check passed",
 ]) {
   if (!a11yLive.includes(requiredA11yText)) {
