@@ -1,4 +1,5 @@
 const baseUrl = process.env.LINK_BASE_URL ?? "https://twvita.com.tw";
+const fetchTimeoutMs = Number(process.env.LINK_FETCH_TIMEOUT_MS ?? 5000);
 
 const sourcePages = [
   { path: "/", status: 200 },
@@ -12,6 +13,20 @@ const sourcePages = [
 
 const issues = [];
 const internalUrls = new Map();
+
+const fetchWithTimeout = async (url, options = {}) => {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), fetchTimeoutMs);
+  try {
+    return await fetch(url, { ...options, signal: controller.signal });
+  } catch (error) {
+    const reason = error?.name === "AbortError" ? `timeout after ${fetchTimeoutMs}ms` : error?.message ?? String(error);
+    issues.push(`${url}: fetch failed (${reason})`);
+    return null;
+  } finally {
+    clearTimeout(timer);
+  }
+};
 
 const decodeAttribute = (value) => value
   .replace(/&amp;/g, "&")
@@ -123,7 +138,10 @@ const validateContactLabels = (sourcePath, html) => {
 
 for (const page of sourcePages) {
   const url = `${baseUrl}${page.path}`;
-  const response = await fetch(url, { redirect: "manual", headers: { "cache-control": "no-cache" } });
+  const response = await fetchWithTimeout(url, { redirect: "manual", headers: { "cache-control": "no-cache" } });
+  if (!response) {
+    continue;
+  }
   const html = await response.text();
 
   if (response.status !== page.status) {
@@ -166,7 +184,10 @@ for (const [url, sources] of internalUrls) {
   if (url.startsWith(`${baseUrl}/cdn-cgi/`)) {
     continue;
   }
-  const response = await fetch(url, { redirect: "manual", headers: { "cache-control": "no-cache" } });
+  const response = await fetchWithTimeout(url, { redirect: "manual", headers: { "cache-control": "no-cache" } });
+  if (!response) {
+    continue;
+  }
   if (response.status !== 200) {
     issues.push(`${url}: expected 200, got ${response.status}; referenced from ${[...sources].join(", ")}`);
     continue;
@@ -192,3 +213,4 @@ if (issues.length > 0) {
 }
 
 console.log(`Live link check passed for ${baseUrl}: ${sourcePages.length} pages and ${internalUrls.size} internal URLs.`);
+process.exit(0);
