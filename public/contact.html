@@ -232,6 +232,23 @@
             <li><strong>Email</strong><br><a href="mailto:vitawaterproof@gmail.com?subject=%E8%87%BA%E7%81%A3%E8%80%98%E9%81%94%E9%98%B2%E6%B0%B4%E5%B7%A5%E7%A8%8B%E8%A9%95%E4%BC%B0&amp;body=%E5%BB%BA%E7%AF%89%E9%A1%9E%E5%9E%8B%EF%BC%9A%0A%E5%95%8F%E9%A1%8C%E4%BD%8D%E7%BD%AE%EF%BC%9A%0A%E7%9B%AE%E5%89%8D%E7%8B%80%E6%B3%81%EF%BC%9A%0A%E7%85%A7%E7%89%87%E6%88%96%E5%B0%BA%E5%AF%B8%EF%BC%9A%0A%E4%BD%BF%E7%94%A8%E9%99%90%E5%88%B6%EF%BC%9A%0A%E5%8F%AF%E8%81%AF%E7%B5%A1%E6%99%82%E9%96%93%EF%BC%9A" data-email-link data-email-label="address" aria-label="寄信至臺灣耘達 Email">vitawaterproof [at] gmail.com</a></li>
             <li><strong>服務範圍</strong><br>雙北地區</li>
           </ul>
+          <details>
+            <summary>沒有郵件程式？查看可複製的信箱與詢價範本</summary>
+            <p>可複製下方資料，貼到您使用的網頁信箱。複製不會寄出郵件。</p>
+            <label for="inquiry-email">信箱</label><br>
+            <input id="inquiry-email" type="text" value="vitawaterproof@gmail.com" readonly><br>
+            <button type="button" data-copy-inquiry="inquiry-email" hidden>複製信箱</button>
+            <p><label for="inquiry-template">詢價範本（不清楚的欄位可先留空）</label><br>
+            <textarea id="inquiry-template" rows="6" readonly>建築類型：
+問題位置：
+目前狀況：
+照片或尺寸：
+使用限制：
+可聯絡時間：</textarea></p>
+            <button type="button" data-copy-inquiry="inquiry-template" hidden>複製詢價範本</button>
+            <p role="status" aria-live="polite" data-copy-status></p>
+            <p>若方便提供照片，可參考全景、滲漏位置及排水口；請避免包含住戶個資或無關室內畫面，不必為拍照進入危險區域。</p>
+          </details>
           <div class="cta-actions">
             <a class="button" href="tel:+886228120021" aria-label="來電洽詢臺灣耘達防水工程">來電洽詢</a>
             <a class="button secondary" href="mailto:vitawaterproof@gmail.com?subject=%E8%87%BA%E7%81%A3%E8%80%98%E9%81%94%E9%98%B2%E6%B0%B4%E5%B7%A5%E7%A8%8B%E8%A9%95%E4%BC%B0&amp;body=%E5%BB%BA%E7%AF%89%E9%A1%9E%E5%9E%8B%EF%BC%9A%0A%E5%95%8F%E9%A1%8C%E4%BD%8D%E7%BD%AE%EF%BC%9A%0A%E7%9B%AE%E5%89%8D%E7%8B%80%E6%B3%81%EF%BC%9A%0A%E7%85%A7%E7%89%87%E6%88%96%E5%B0%BA%E5%AF%B8%EF%BC%9A%0A%E4%BD%BF%E7%94%A8%E9%99%90%E5%88%B6%EF%BC%9A%0A%E5%8F%AF%E8%81%AF%E7%B5%A1%E6%99%82%E9%96%93%EF%BC%9A" data-email-link aria-label="Email 洽詢臺灣耘達">Email 洽詢</a>
@@ -256,5 +273,6 @@
   </main>
   <footer class="site-footer"><div class="footer-inner"><div><strong>臺灣耘達股份有限公司</strong><div class="small">11172 台北市士林區永平街9巷16號</div><div class="small">TEL：<a href="tel:+886228120021" aria-label="臺灣耘達電話 (02)2812-0021">(02)2812-0021</a> / E-mail：<span data-email-text>vitawaterproof [at] gmail.com</span></div></div><div class="footer-links"><a href="/contact">聯絡我們</a><a href="/projects">工程實績</a></div></div></footer>
   <script src="/assets/site.js?v=20260617-audit96" defer></script>
+  <script src="/assets/contact-copy-20261102.js" defer></script>
 </body>
 </html>
