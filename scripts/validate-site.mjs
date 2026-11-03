@@ -155,6 +155,7 @@ const redirectExpectations = [
   ["/tank", "/tank-pool-waterproofing", "301"],
   ["/pool", "/tank-pool-waterproofing", "301"],
   ["/works", "/projects", "301"],
+  ["/case", "/projects", "301"],
   ["/membranes", "/", "301"],
   ["/spec", "/", "301"],
   ["/contact-us", "/contact", "301"],
@@ -1693,6 +1694,27 @@ for (const requiredReadmeText of [
 ]) {
   if (!readme.includes(requiredReadmeText)) {
     issues.push(`README.md: missing maintenance guidance ${requiredReadmeText}`);
+  }
+}
+
+const { default: routingWorker } = await import("../public/_worker.js");
+const mockAssets = { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } };
+for (const route of ["/case", "/case/"]) {
+  const response = await routingWorker.fetch(new Request(`https://twvita.com.tw${route}`), mockAssets);
+  if (response.status !== 301 || response.headers.get("location") !== "https://twvita.com.tw/projects") {
+    issues.push(`_worker.js: ${route} must redirect directly to /projects with 301`);
+  }
+}
+for (const route of ["/format", "/format/", "/format.html"]) {
+  const response = await routingWorker.fetch(new Request(`https://twvita.com.tw${route}`), mockAssets);
+  const html = await response.text();
+  if (response.status !== 410 || response.headers.has("location") ||
+      response.headers.get("content-type") !== "text/html; charset=utf-8" ||
+      response.headers.get("cache-control") !== "no-store" ||
+      !response.headers.has("content-security-policy") ||
+      !html.includes('<meta name="robots" content="noindex">') ||
+      !html.includes('href="/contact"') || !html.includes('href="/"')) {
+    issues.push(`_worker.js: ${route} must return a secured, noindex 410 page with contact and home links`);
   }
 }
 
