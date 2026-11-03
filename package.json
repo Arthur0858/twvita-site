@@ -21,11 +21,12 @@
     "perf:live": "node scripts/perf-live.mjs",
     "print:live": "node scripts/print-live.mjs",
     "structured:live": "node scripts/structured-live.mjs",
-    "validate": "node scripts/validate-site.mjs",
+    "validate": "node scripts/validate-site.mjs && node scripts/check-deploy-workflow.mjs",
     "smoke:live": "node scripts/smoke-live.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.12.1",
-    "playwright": "^1.61.0"
+    "playwright": "^1.61.0",
+    "wrangler": "4.157.0"
   }
 }

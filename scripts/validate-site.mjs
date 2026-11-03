@@ -1683,7 +1683,7 @@ for (const requiredReadmeText of [
   "npm run cache:live",
   "npm run cache:purge:obsolete",
   "CACHE_PURGE_EXECUTE=1 CLOUDFLARE_API_TOKEN=... CLOUDFLARE_ZONE_ID=... npm run cache:purge:obsolete",
-  "npx wrangler pages deploy public --project-name=twvita --branch=main",
+  "npx --no-install wrangler pages deploy public --project-name=twvita --branch=main",
   "Current public asset version: `20260617-audit96`",
   "目前服務範圍：雙北地區",
   "Footer company information should display `(02)2812-0021` on every page.",
