@@ -255,7 +255,7 @@
           </div>
         </div>
         <div class="contact-panel">
-          <h2>讓我們更快判斷的資訊</h2>
+          <h2 id="inquiry-info">讓我們更快判斷的資訊</h2>
           <ul class="check-list">
             <li>案場類型：公寓、社區、透天、店面、廠辦、水池或其他場域。</li>
             <li>問題位置：屋頂、女兒牆、排水口、設備穿孔、水塔、水箱或池體。</li>

@@ -1430,7 +1430,7 @@ for (const file of htmlFiles) {
       continue;
     }
 
-    const cleanPath = value.split("?")[0];
+    const cleanPath = value.split(/[?#]/)[0];
     if (canonicalRoutes.has(cleanPath)) {
       continue;
     }
