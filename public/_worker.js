@@ -61,6 +61,43 @@ export default {
       return redirect(url.toString());
     }
 
+    if (url.pathname === "/case" || url.pathname === "/case/") {
+      url.pathname = "/projects";
+      return redirect(url.toString());
+    }
+
+    if (["/format", "/format/", "/format.html"].includes(url.pathname)) {
+      return withSecurityHeaders(new Response(`<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>規格頁面已停止提供 | 臺灣耘達股份有限公司</title>
+  <link rel="stylesheet" href="/assets/styles-20260617-audit96.css">
+</head>
+<body>
+  <main id="main">
+    <section class="page-title"><div class="section-inner">
+      <p class="eyebrow">410</p>
+      <h1>規格頁面已停止提供</h1>
+      <p>原有的規格頁面已不再提供。如需了解產品或工程規格，歡迎與我們聯絡詢價。</p>
+      <div class="hero-actions">
+        <a class="button" href="/contact">聯絡我們詢價</a>
+        <a class="button secondary" href="/">回首頁</a>
+      </div>
+    </div></section>
+  </main>
+</body>
+</html>`, {
+        status: 410,
+        headers: {
+          "Content-Type": "text/html; charset=utf-8",
+          "Cache-Control": "no-store",
+        },
+      }));
+    }
+
     if (url.pathname === "/404" || url.pathname === "/404.html") {
       const notFoundUrl = new URL("/404", url);
       const notFoundAsset = await env.ASSETS.fetch(new Request(notFoundUrl, request));
