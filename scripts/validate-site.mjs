@@ -46,33 +46,33 @@ const pageSeoExpectations = {
     canonical: "https://twvita.com.tw/roof-waterproofing",
     currentNav: "屋頂防水",
     title: "屋頂與設備周邊防水 | 臺灣耘達股份有限公司",
-    description: "雙北地區頂樓、鐵皮屋、店面後場與小型廠辦屋面防水工程，依排水、基層與設備節點規劃施工。",
+    description: "雙北地區屋頂防水工程，服務公寓頂樓、社區、店面後場、鐵皮屋及小型廠辦，依屋面老化、水痕、排水坡度、女兒牆與設備基座周邊條件評估，規劃細部收邊與施工。",
     h1: "屋頂、女兒牆與設備周邊防水工程",
-    ogDescription: "雙北地區屋頂、店面後場、廠辦屋面與設備周邊防水工程，依排水與細部收邊規劃。",
+    ogDescription: "雙北地區屋頂防水工程，服務公寓頂樓、社區、店面後場、鐵皮屋及小型廠辦，依屋面老化、水痕、排水坡度、女兒牆與設備基座周邊條件評估，規劃細部收邊與施工。",
   },
   "roof-waterproofing.html": {
     canonical: "https://twvita.com.tw/roof-waterproofing",
     currentNav: "屋頂防水",
     title: "屋頂與設備周邊防水 | 臺灣耘達股份有限公司",
-    description: "雙北地區頂樓、鐵皮屋、店面後場與小型廠辦屋面防水工程，依排水、基層與設備節點規劃施工。",
+    description: "雙北地區屋頂防水工程，服務公寓頂樓、社區、店面後場、鐵皮屋及小型廠辦，依屋面老化、水痕、排水坡度、女兒牆與設備基座周邊條件評估，規劃細部收邊與施工。",
     h1: "屋頂、女兒牆與設備周邊防水工程",
-    ogDescription: "雙北地區屋頂、店面後場、廠辦屋面與設備周邊防水工程，依排水與細部收邊規劃。",
+    ogDescription: "雙北地區屋頂防水工程，服務公寓頂樓、社區、店面後場、鐵皮屋及小型廠辦，依屋面老化、水痕、排水坡度、女兒牆與設備基座周邊條件評估，規劃細部收邊與施工。",
   },
   "tank-pool-waterproofing": {
     canonical: "https://twvita.com.tw/tank-pool-waterproofing",
     currentNav: "水塔水池",
     title: "水塔、水箱與池體防水 | 臺灣耘達股份有限公司",
-    description: "雙北地區水塔、水箱、蓄水池與小型池體防水工程，依池體材質、滲漏位置、清潔維護與可施工時段規劃。",
+    description: "雙北地區水塔水池防水工程，服務住家水塔、社區水箱、蓄水池與景觀池，依池體結構、裂縫接縫、表面狀況、出入口及排空條件評估，兼顧施工順序與後續檢查維護。",
     h1: "水塔、水箱與池體防水工程",
-    ogDescription: "雙北地區水塔、水箱與小型池體防水工程，先確認池體條件、滲水位置與後續維護方式。",
+    ogDescription: "雙北地區水塔水池防水工程，服務住家水塔、社區水箱、蓄水池與景觀池，依池體結構、裂縫接縫、表面狀況、出入口及排空條件評估，兼顧施工順序與後續檢查維護。",
   },
   "tank-pool-waterproofing.html": {
     canonical: "https://twvita.com.tw/tank-pool-waterproofing",
     currentNav: "水塔水池",
     title: "水塔、水箱與池體防水 | 臺灣耘達股份有限公司",
-    description: "雙北地區水塔、水箱、蓄水池與小型池體防水工程，依池體材質、滲漏位置、清潔維護與可施工時段規劃。",
+    description: "雙北地區水塔水池防水工程，服務住家水塔、社區水箱、蓄水池與景觀池，依池體結構、裂縫接縫、表面狀況、出入口及排空條件評估，兼顧施工順序與後續檢查維護。",
     h1: "水塔、水箱與池體防水工程",
-    ogDescription: "雙北地區水塔、水箱與小型池體防水工程，先確認池體條件、滲水位置與後續維護方式。",
+    ogDescription: "雙北地區水塔水池防水工程，服務住家水塔、社區水箱、蓄水池與景觀池，依池體結構、裂縫接縫、表面狀況、出入口及排空條件評估，兼顧施工順序與後續檢查維護。",
   },
   "projects": {
     canonical: "https://twvita.com.tw/projects",
@@ -211,12 +211,12 @@ const priorityImageExpectations = {
     alt: 'alt="水箱與池體內襯防水處理"',
   },
   "projects": {
-    preload: '<link rel="preload" as="image" href="/assets/images/site-roof-detail-720.webp"',
+    preload: '<link rel="preload" as="image" href="/assets/images/site-roof-detail-640.webp"',
     image: 'src="/assets/images/site-roof-detail.jpg"',
     alt: 'alt="防水收邊與屋面細部檢查"',
   },
   "projects.html": {
-    preload: '<link rel="preload" as="image" href="/assets/images/site-roof-detail-720.webp"',
+    preload: '<link rel="preload" as="image" href="/assets/images/site-roof-detail-640.webp"',
     image: 'src="/assets/images/site-roof-detail.jpg"',
     alt: 'alt="防水收邊與屋面細部檢查"',
   },
@@ -1182,7 +1182,7 @@ for (const file of htmlFiles) {
   if ((file === "roof-waterproofing" || file === "roof-waterproofing.html") && !html.includes("服務雙北地區，針對屋面老化")) {
     issues.push(`${file}: roof page visible service-area copy should use 雙北地區`);
   }
-  if ((file === "roof-waterproofing" || file === "roof-waterproofing.html") && !html.includes('content="雙北地區屋頂、店面後場、廠辦屋面與設備周邊防水工程，依排水與細部收邊規劃。"')) {
+  if ((file === "roof-waterproofing" || file === "roof-waterproofing.html") && !html.includes('content="雙北地區屋頂防水工程，服務公寓頂樓、社區、店面後場、鐵皮屋及小型廠辦，依屋面老化、水痕、排水坡度、女兒牆與設備基座周邊條件評估，規劃細部收邊與施工。"')) {
     issues.push(`${file}: roof social descriptions should use the current 雙北地區 wording`);
   }
   if ((file === "roof-waterproofing" || file === "roof-waterproofing.html") && html.includes("設備周邊滲漏處理，依排水與細部收邊規劃。")) {
@@ -1194,7 +1194,7 @@ for (const file of htmlFiles) {
   if ((file === "tank-pool-waterproofing" || file === "tank-pool-waterproofing.html") && !html.includes("服務雙北地區，針對蓄水空間")) {
     issues.push(`${file}: tank/pool visible service-area copy should use 雙北地區`);
   }
-  if ((file === "tank-pool-waterproofing" || file === "tank-pool-waterproofing.html") && !html.includes('content="雙北地區水塔、水箱與小型池體防水工程，先確認池體條件、滲水位置與後續維護方式。"')) {
+  if ((file === "tank-pool-waterproofing" || file === "tank-pool-waterproofing.html") && !html.includes('content="雙北地區水塔水池防水工程，服務住家水塔、社區水箱、蓄水池與景觀池，依池體結構、裂縫接縫、表面狀況、出入口及排空條件評估，兼顧施工順序與後續檢查維護。"')) {
     issues.push(`${file}: tank/pool social descriptions should use the current 雙北地區 wording`);
   }
   if ((file === "projects" || file === "projects.html") && !html.includes("請描述滲漏時機與已做過的修補方式")) {
