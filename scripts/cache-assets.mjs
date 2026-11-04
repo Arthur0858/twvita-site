@@ -1,6 +1,6 @@
 export const currentAssets = [
   "/assets/styles-20260617-audit96.css",
-  "/assets/site.js?v=20260617-audit96",
+  "/assets/site-20261104-menu.js",
   "/assets/images/vita-icon.png?v=20260617-audit96",
 ];
 

@@ -484,7 +484,7 @@ const readImageSize = (() => {
 })();
 
 const worker = read("public/_worker.js");
-const siteJs = read("public/assets/site.js");
+const siteJs = read("public/assets/site-20261104-menu.js");
 const styles = read("public/assets/styles-20260617-audit96.css");
 
 function cssBraceSummary(css) {
@@ -848,6 +848,9 @@ for (const file of htmlFiles) {
   }
   if (!html.includes('<link rel="icon" href="/favicon.ico" sizes="any">')) {
     issues.push(`${file}: missing explicit favicon.ico link`);
+  }
+  if (!html.includes('<script src="/assets/site-20261104-menu.js" defer></script>')) {
+    issues.push(`${file}: expected the current versioned site script`);
   }
   if (!html.includes('<link rel="stylesheet" href="/assets/styles-20260617-audit96.css">')) {
     issues.push(`${file}: should use the cache-fresh stylesheet file`);
@@ -1726,4 +1729,4 @@ if (issues.length > 0) {
   process.exit(1);
 }
 
-console.log(`Validation passed: ${htmlFiles.length} HTML route files, ${jsonLdHashes.size} JSON-LD CSP hashes.`);
+console.log(`Static validation passed: ${htmlFiles.length} HTML route files, ${jsonLdHashes.size} JSON-LD CSP hashes.`);
