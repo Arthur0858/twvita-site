@@ -56,11 +56,13 @@ npm run cache:live
 
 ## Deployment
 
-Deploy only after local validation passes:
+Production deployments use the manually dispatched `.github/workflows/deploy.yml` workflow and the `production` environment. Configure approval protection on that environment before relying on it as a gate. Whether non-main refs may deploy is an owner decision pending. Deployments to project `twvita`, branch `main` share a fixed concurrency group and do not cancel an in-flight deployment. The job records the source ref, full commit SHA, target, Node version, and Wrangler version.
+
+The workflow uses Node 22 and the locally installed, exactly pinned Wrangler version. Deploy only after local validation passes:
 
 ```bash
 npm run validate
-npx wrangler pages deploy public --project-name=twvita --branch=main
+npx --no-install wrangler pages deploy public --project-name=twvita --branch=main
 ```
 
 After deploy, verify the Pages preview first:

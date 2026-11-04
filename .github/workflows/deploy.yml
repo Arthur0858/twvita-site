@@ -9,12 +9,11 @@ on:
 permissions:
   contents: read
 
-concurrency:
-  group: twvita-site-${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
-
 jobs:
   validate:
+    concurrency:
+      group: twvita-site-${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
@@ -31,6 +30,9 @@ jobs:
   deploy-production:
     if: github.event_name == 'workflow_dispatch'
     needs: validate
+    concurrency:
+      group: twvita-pages-production-twvita-main
+      cancel-in-progress: false
     runs-on: ubuntu-latest
     environment:
       name: production
@@ -46,5 +48,14 @@ jobs:
           node-version: "22"
           cache: npm
       - run: npm ci
+      - name: Record deployment source and target
+        env:
+          SOURCE_REF: ${{ github.ref }}
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          printf 'Source ref: %s\nSource SHA: %s\nTarget: project twvita, branch main\n' "$SOURCE_REF" "$SOURCE_SHA" | tee -a "$GITHUB_STEP_SUMMARY"
       - name: Deploy to Cloudflare Pages
-        run: npx wrangler pages deploy public --project-name=twvita --branch=main
+        run: |
+          node --version
+          npx --no-install wrangler --version
+          npx --no-install wrangler pages deploy public --project-name=twvita --branch=main
