@@ -21,8 +21,9 @@
     "perf:live": "node scripts/perf-live.mjs",
     "print:live": "node scripts/print-live.mjs",
     "structured:live": "node scripts/structured-live.mjs",
-    "validate": "node scripts/validate-site.mjs",
-    "smoke:live": "node scripts/smoke-live.mjs"
+    "validate": "node scripts/validate-site.mjs && node scripts/test-worker.mjs && node -e \"console.log('Browser tests: not run (use npm run test:menu)')\"",
+    "smoke:live": "node scripts/smoke-live.mjs",
+    "test:menu": "node scripts/test-menu-focus.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.12.1",
