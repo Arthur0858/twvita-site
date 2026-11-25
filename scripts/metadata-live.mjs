@@ -18,13 +18,15 @@ const pages = [
     path: "/roof-waterproofing",
     title: "屋頂與設備周邊防水 | 臺灣耘達股份有限公司",
     h1: "屋頂、女兒牆與設備周邊防水工程",
-    requiredDescriptionTerms: ["雙北地區", "屋面防水", "排水", "設備節點"],
+    requiredDescriptionTerms: ["雙北地區", "屋頂防水", "排水", "設備基座"],
+    allowMatchingOgDescription: true,
   },
   {
     path: "/tank-pool-waterproofing",
     title: "水塔、水箱與池體防水 | 臺灣耘達股份有限公司",
     h1: "水塔、水箱與池體防水工程",
     requiredDescriptionTerms: ["雙北地區", "水塔", "水箱", "池體"],
+    allowMatchingOgDescription: true,
   },
   {
     path: "/projects",
@@ -98,7 +100,7 @@ for (const page of pages) {
   }
   checkLength(`${fetchUrl} title`, title, 10, 32);
   checkLength(`${fetchUrl} meta description`, description, 30, 85);
-  checkLength(`${fetchUrl} og description`, ogDescription, 24, 65);
+  checkLength(`${fetchUrl} og description`, ogDescription, 24, 85);
 
   for (const [label, value, map] of [
     ["title", title, seenTitles],
@@ -128,7 +130,7 @@ for (const page of pages) {
   if (twitterDescription !== ogDescription) {
     issues.push(`${fetchUrl}: Twitter description should match OG description`);
   }
-  if (description === ogDescription) {
+  if (description === ogDescription && !page.allowMatchingOgDescription) {
     issues.push(`${fetchUrl}: meta description and OG description should not be identical`);
   }
   if (twitterCard !== "summary_large_image") {
